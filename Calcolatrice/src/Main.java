@@ -17,14 +17,20 @@ public class Main {
   
     public static void whatOper(double x, double y, char oper){
         if (oper == '+'){
-
+            sum(x,y);
         }else if(oper == '-'){
-
+            sottrazione(x,y);
         }else if(oper == '*'){
 
         }else if(oper == '/'){
 
         }
+    }
+    public static double sum(double x,double y){
+        return x+y;
+    }
+    public static double sottrazione(double x,double y){
+        return x-y;
     }
 
     
