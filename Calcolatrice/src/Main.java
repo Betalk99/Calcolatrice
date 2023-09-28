@@ -17,14 +17,20 @@ public class Main {
   
     public static void whatOper(double x, double y, char oper){
         if (oper == '+'){
-
+            System.out.println(sum(x,y));
         }else if(oper == '-'){
-
+            System.out.println(sottrazione(x,y));
         }else if(oper == '*'){
             System.out.println(multi(x,y));
         }else if(oper == '/'){
             divisione(x,y);
         }
+    }
+    public static double sum(double x,double y){
+        return x+y;
+    }
+    public static double sottrazione(double x,double y){
+        return x-y;
     }
 
     public static double multi(double x, double y){
