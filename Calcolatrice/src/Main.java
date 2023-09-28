@@ -17,9 +17,9 @@ public class Main {
   
     public static void whatOper(double x, double y, char oper){
         if (oper == '+'){
-            sum(x,y);
+            System.out.println(sum(x,y));
         }else if(oper == '-'){
-            sottrazione(x,y);
+            System.out.println(sottrazione(x,y));
         }else if(oper == '*'){
 
         }else if(oper == '/'){
