@@ -4,7 +4,21 @@ public class Main {
         double valDue = 3;
         char oper = '*';
 
+        whatOper(valUno, valDue, oper);
 
     }
+    public static void whatOper(double x, double y, char oper){
+        if (oper == '+'){
+
+        }else if(oper == '-'){
+
+        }else if(oper == '*'){
+
+        }else if(oper == '/'){
+
+        }
+    }
+
     
+
 }
