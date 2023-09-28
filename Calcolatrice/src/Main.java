@@ -1,8 +1,8 @@
 public class Main {
     public static void main(String[] args) {
-        double valUno = 10;
-        double valDue = 3;
-        char oper = '*';
+        double valUno = 3;
+        double valDue = 1;
+        char oper = '/';
 
 
         whatOper(valUno, valDue, oper);
@@ -21,12 +21,19 @@ public class Main {
         }else if(oper == '-'){
 
         }else if(oper == '*'){
-
+            System.out.println(multi(x,y));
         }else if(oper == '/'){
-
+            divisione(x,y);
         }
     }
 
-    
+    public static double multi(double x, double y){
+        return x*y; //risultato moltiplicazione
+    }
+    public static void divisione(double x, double y){
+        System.out.println("Quoziente: " + x / y); //quoziente
+        System.out.println("Resto: " +  x % y); //resto
+    }
+
 
 }
