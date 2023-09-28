@@ -3,11 +3,14 @@ public class Main {
         double valUno = 3;
         double valDue = 1;
         char oper = '/';
-
+        double base = 10;
+        double espon = 3;
 
         whatOper(valUno, valDue, oper);
 
         System.out.println(isEven(10));
+
+        calcPotenza(base, espon);
     }
 
     public static boolean isEven(int x){
@@ -39,6 +42,16 @@ public class Main {
     public static void divisione(double x, double y){
         System.out.println("Quoziente: " + x / y); //quoziente
         System.out.println("Resto: " +  x % y); //resto
+    }
+
+    public static void calcPotenza(double base, double espon){
+        double result = base;
+        for(int i=1; i<espon; i++){
+            //System.out.println(result);
+            result = result * base;
+        }
+
+        System.out.println("Il risultato della potenza è: " + result);
     }
 
 
